@@ -1,0 +1,139 @@
+.SliderEditBox {
+	width: 120px;
+	height: 18px;
+}
+
+.SliderEditBox .Label {
+	width: 120px;
+	height: 18px;
+	background: #333333;
+	color: orange;
+	cursor: col-resize;
+	border-bottom: 1px dotted orange;
+	font-size: 14px;
+	font-weight: normal;
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+
+.SliderEditBox .TextBox {
+	width: 118px;
+	height: 16px;
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+	outline: none;
+}
+
+.Knob {
+	width: 64px;
+	height: 64px;
+	background-color: #151515;
+	border: 2px outset silver;
+	border-radius: 64px;
+	-moz-border-radius: 64px;
+	outline: none;
+	cursor: crosshair;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+
+.Knob .Panel {
+	width: inherit;
+	height: inherit;
+	background-color: inherit;
+	border-radius: inherit;
+	position: absolute;
+}
+
+.Knob .Panel .Pointer {
+	width: 2px;
+	height: 30px;
+	background-color: darkorange;
+	border: 1px solid orange;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	position: absolute;
+	left: 30px;
+	transform-origin: 50% 100%;
+}
+
+.Knob .Panel .LowLine {
+	width: 1px;
+	height: 40px;
+	background: silver;
+	position: absolute;
+	left: 32px;
+	top: -8px;
+	transform-origin: 50% 100%;
+}
+
+.Knob .Panel .HighLine {
+	width: 1px;
+	height: 40px;
+	background: silver;
+	position: absolute;
+	left: 32px;
+	top: -8px;
+	transform-origin: 50% 100%;
+}
+
+.Knob .Panel .Label {
+	width: 64px;
+	height: 16px;
+	position: absolute;
+	top: 48px;
+	color: orange;
+	font-size: 8px;
+	font-weight: normal;
+	text-align: center;
+	vertical-align: middle;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+
+.Knob .Panel .Button {
+	position: absolute;
+	left: 22px;
+	top: 22px;
+	width: 20px;
+	height: 20px;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	cursor: pointer;
+	cursor: hand;
+	font-size:small;
+	color: silver;
+	background-color: #353535;
+	border: 2px outset silver;
+	border-radius: 18px;
+	-moz-border-radius: 18px;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	outline: none;
+}
+.Knob .Panel .Button:active {
+	border: 2px inset silver;
+	color: darkorange;
+}
+.Knob .Panel .Button:hover {
+	color: orange;
+	background-color: #353535;
+	border-color: orange;
+}

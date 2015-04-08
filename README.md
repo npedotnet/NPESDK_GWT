@@ -23,6 +23,32 @@ http://npedotnet.github.io/archives/npesdk-gwt-1.0.jar
 <inherits name='net.npe.gwt'/>
 ```
 
+## CanvasCreator
+
+CanvasCreator is able to create a TGA or DDS HTML5 Canvas.
+
+```java
+import com.google.gwt.canvas.client.Canvas;
+import com.google.gwt.typedarrays.shared.ArrayBuffer;
+
+import net.npe.gwt.canvas.CanvasCreator;
+import net.npe.gwt.canvas.CanvasCreator.ImageType;
+import net.npe.gwt.xhr.client.ArrayBufferRequest;
+
+String url = "images/test.tga";
+ArrayBufferRequest abr = new ArrayBufferRequest(url, new ArrayBufferRequest.Handler() {
+	@Override
+	public void onSuccess(ArrayBuffer arrayBuffer) {
+		Canvas canvas = CanvasCreator.createImageCanvas(arrayBuffer, ImageType.TGA);
+		panel.add(canvas);
+	}
+	@Override
+	public void onFailure() {
+	}
+});
+abr.send();
+```
+
 ## Client UI
 
 ### Range
